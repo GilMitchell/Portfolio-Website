@@ -17,19 +17,21 @@
 <body>
 
     <header>
-        <img src="https://via.placeholder.com/150x50?text=Logo" alt="Mitch Gilbert">
-        <nav>
-            <ul>
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <img class="logo" src="img/profile-picture/logo@1x.svg" alt="Mitch Gilbert">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
 <main>
-    <div>
-        <div>
+    <div id="hero">
+        <div class="container">
             <h1>Hi, my name is Mitch Gilbert.
                 <span>I am a UI Designer from the United States.</span>
             </h1>
@@ -42,10 +44,10 @@
     </div>
 
 
-    <div>
-        <div>          
+    <div id="work">
+        <div class="container">          
             <h2>My Work</h2> 
-            <div>
+            <div class="row">
                 <div>
                     <picture>
                         <source srcset="img/featured-images/liquor-labs@1x.png" media="(max-width:767px)">
@@ -62,31 +64,35 @@
             </div>           
         </div>
     </div>
-
-            <div>
-                <div>
-                    <picture>
+        <div id="work">
+            <div class="container">
+                <div class="row">
+                    <div>
+                     <picture>
                         <source srcset="img/featured-images/card-cavern@1x.png" media="(max-width:767px)">
                         <img src="img/featured-images/card-cavern@2x.png" alt="Card Cavern App Mockup">
-                    </picture>
-                </div>
-                <div>
-                    <h3>Card Cavern</h3>
-                    <p>Card Cavern is a trading card game online store. Card collectors 
-                        will be able to filter by different types of trading card games. 
-                        They will easily be able to shop where ever they are and as time goes on, 
-                        physical card stores are dwindling and are rarely in most people’s town 
-                        or city. We have come to facilitate the need.</p>
-                    <a href="card-cavern.html" class="button">Read More</a>
-                </div>
-            </div>           
+                     </picture>
+                    </div>
+                    <div>
+                        <h3>Card Cavern</h3>
+                            <p>Card Cavern is a trading card game online store. Card collectors 
+                            will be able to filter by different types of trading card games. 
+                            They will easily be able to shop where ever they are and as time goes on, 
+                            physical card stores are dwindling and are rarely in most people’s town 
+                            or city. We have come to facilitate the need.</p>
+                                <a href="card-cavern.html" class="button">Read More</a>
+                    </div>
+                </div>    
+            </div>
+        </div>               
 </main>
             <footer id="contact">
+               <div class="container">
+                <h2>Get In Touch</h2>
                 <a href="#contact">Contact</a>
                 <a href="about.html#skills">My Skills</a>
                 <a href="files/cv.pdf" download>Download my CV</a>
                 <div>
-                    <h2>Get In Touch</h2>
                     <p>If you would like to discuss opportunities and are interested in working with me, please get in touch. </p>
                     <a href="mailto:GilbertMitchell10@gmail.com" class="button contact">Send Me An Email</a>
                 </div>
@@ -99,6 +105,7 @@
                     </a>
                 </div>
                 <p>Copyright Mitch Gilbert 2022</p>
+               </div>
             </footer>
 </body>
 
