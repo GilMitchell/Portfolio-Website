@@ -8,7 +8,7 @@ Secondaty Color (steel) #323232
 */
 
 body {
-    background-color:#FFFFFF;
+    background: color #FFFFFF;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -17,7 +17,7 @@ body {
 }
 h1, h2, h3, h4 {line-height: 1.4;}
 h1 {
-    font-size: 2.75em;
+    font-size: 2.5em;
     font-weight: 700;
 }
 h2 {
@@ -36,29 +36,32 @@ img {
     width: 100%;
 }
 a {
-    color: #ff7f50;
+    color: #7d1e0e;
     text-decoration: none;
 }
-a;:visited {
-    color: #ff7f50;
+a:visited {
+    color: #7d1e0e;
 }
 a:hover,
 a:focus {
-    color: #cc6540;
+    color: #691c0e;
     text-decoration: underline;
 }
 a:active {
-    color: #994c30;
+    color: #7d1e0e;
 }
 .button {
     display: inline-block;
-    background-color: #ff7f50;
+    background-color: #7d1e0e;
     color: #FFFFFF;
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid #994c30;
+    border-bottom: 2px solid #691c0e;
     transition: 0.2s opacity;
+}
+.button:visited {
+    color: #FFFFFF;
 }
 .button:hover {
     color: #FFFFFF;
@@ -66,15 +69,81 @@ a:active {
     text-decoration: none;
 }
 .button:active {
-    color: #994c30;
+    color: #FFFFFF;
 }
 .button.contact {
     background-color: transparent;
-    color: #ff7f50;
+    color: #7d1e0e;
     text-transform: uppercase;
-    border: 2px solid #ff7f50;
+    border: 2px solid #7d1e0e;
 }
 .button.contact:hover {
-    background-color: #ff7f50;
+    background-color: #7d1e0e;
     color: #FFFFFF;
+}
+* { 
+    box-sizing: border-box;
+}
+/* Layout styling*/
+.container {
+    padding: 0 15px;
+}
+.row {
+    margin: 25px 0;
+}
+#work .row {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #323232;
+}
+#hero h1 {
+    text-align: center;
+}
+.center {
+    text-align: center;
+}
+.logo {
+    max-width: 250px;
+    text-align: center;
+}
+header {
+    background-color: #323232;
+    text-align: center;
+    padding: 0;
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.8);
+    -moz-box-shadow:    0px 10px 10px 0px rgba(50, 50, 50, 0.8);
+    box-shadow:         0px 10px 10px 0px rgba(50, 50, 50, 0.8);
+    position: fixed;
+}
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav > ul > li {
+    display: inline-block;
+}
+nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+nav > ul > li > a:visited {
+    color: #FFFFFF;
+}
+nav > ul > li > a:hover {
+    color: #6a6a6a;
+    opacity: 0.95;
+    text-decoration: none;
+}
+nav > ul > li > a:active {
+    color: #FFFFFF;
+}
+#hero { 
+    background-color: #6a6a6a;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+}
+main { 
+    padding-top: 133px;
 }
