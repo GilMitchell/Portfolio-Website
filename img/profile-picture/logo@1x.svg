@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="50px" viewBox="0 0 150 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard</title>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2">
+            <rect id="Rectangle" stroke="#7D1E0E" stroke-width="2" fill="#FFFFFF" x="1" y="1" width="69" height="48"></rect>
+            <text id="Mitch-Gilbert" font-family="SFProDisplay-Bold, SF Pro Display" font-size="18" font-weight="bold" letter-spacing="0.0036" fill="#7D1E0E">
+                <tspan x="11.7746914" y="21">Mitch</tspan>
+                <tspan x="7.08212656" y="42">Gilbert</tspan>
+            </text>
+        </g>
+        <g id="Group" transform="translate(69.000000, 0.000000)">
+            <rect id="Rectangle" fill="#7D1E0E" x="0" y="0" width="81" height="50"></rect>
+            <text id="UI/UX-Designer" font-family="SFProDisplay-Bold, SF Pro Display" font-size="18" font-weight="bold" letter-spacing="0.0036" fill="#FFFFFF">
+                <tspan x="16.4133633" y="21">UI/UX</tspan>
+                <tspan x="3.59351016" y="42">Designer</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
