@@ -75,7 +75,7 @@ a:active {
     background-color: transparent;
     color: #7d1e0e;
     text-transform: uppercase;
-    border: 2px solid #7d1e0e;
+    border: 3px solid #7d1e0e;
 }
 .button.contact:hover {
     background-color: #7d1e0e;
@@ -146,4 +146,25 @@ nav > ul > li > a:active {
 }
 main { 
     padding-top: 133px;
+}
+#work {
+    background-color: #6a6a6a;
+    padding: 5px 0;
+
+}
+.about {
+    background-color: #6a6a6a;
+    padding: 5px 5px;
+}
+footer {
+    background-color: #6a6a6a;
+    padding: 5px 0;
+}
+.socialmedia {
+    display: inline-block;
+    max-width: 50px;
+    min-width: 50px;
+    max-height: 50px;
+    min-width: 50px;
+    margin: 10px 10px;
 }
