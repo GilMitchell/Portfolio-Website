@@ -10,7 +10,7 @@ Secondaty Color (steel) #323232
 body {
     background: color #FFFFFF;
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.6;
     color: #000000;
@@ -23,6 +23,7 @@ h1 {
 h2 {
     font-size: 2.25em;
     font-weight: 700;
+    text-align: center;
 }
 h3 { 
     font-size: 1.75em;
@@ -55,6 +56,7 @@ a:active {
     background-color: #7d1e0e;
     color: #FFFFFF;
     font-weight: 400;
+    text-decoration: none;
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid #691c0e;
@@ -84,19 +86,49 @@ a:active {
 * { 
     box-sizing: border-box;
 }
+.button {
+    display: inline-block;
+    background-color: #7d1e0e;
+    color: #FFFFFF;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2 px solid #691c0e;
+    transition-duration: 0.5s;
+    transition-property: opacity;
+}
+.button:hover {
+    opacity: 0.8;
+}
 /* Layout styling*/
 .container {
     padding: 0 15px;
 }
 .row {
-    margin: 25px 0;
+    margin: 20px 0;
 }
+
 #work .row {
     padding-bottom: 25px;
     border-bottom: 1px solid #323232;
 }
+.about .row {
+    padding-bottom: 25px;
+    
+    border-bottom: 1px solid #323232;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 #hero h1 {
     text-align: center;
+}
+#hero span {
+    display: block;
 }
 .center {
     text-align: center;
@@ -109,11 +141,13 @@ header {
     background-color: #323232;
     text-align: center;
     padding: 0;
+    width: 100%;
     -webkit-box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.8);
     -moz-box-shadow:    0px 10px 10px 0px rgba(50, 50, 50, 0.8);
     box-shadow:         0px 10px 10px 0px rgba(50, 50, 50, 0.8);
     position: fixed;
 }
+
 nav > ul {
     list-style-type: none;
     padding: 0;
@@ -139,7 +173,7 @@ nav > ul > li > a:active {
     color: #FFFFFF;
 }
 #hero { 
-    background-color: #6a6a6a;
+    background-color: #FFFFFF;
     padding: 20px 0;
     display: inline-block;
     width: 100%;
@@ -148,16 +182,19 @@ main {
     padding-top: 133px;
 }
 #work {
-    background-color: #6a6a6a;
+    background-color: #FFFFFF;
     padding: 5px 0;
 
 }
 .about {
-    background-color: #6a6a6a;
+    background-color: #FFFFFF;
     padding: 5px 5px;
+
 }
 footer {
-    background-color: #6a6a6a;
+    text-align: center;
+    background-color: #FFFFFF;
+    margin-top: 10px;
     padding: 5px 0;
 }
 .socialmedia {
@@ -168,3 +205,81 @@ footer {
     min-width: 50px;
     margin: 10px 10px;
 }
+.berlin-illustration {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+@keyframes color-change {
+    from {fill: #edc655;}
+    to {fill: #f76414;}
+}
+.sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+}
+.cloud-front {
+    animation-duration: 26s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes cloud-move-reverse {
+    from {transform: translate(446px,35px);}
+    to {transform: translate(100px,35px);}
+}
+.cloud-back {
+    animation: 28s cloud-move-reverse infinite alternate linear;
+}
+
+/* Medium Device (640px or larger) */
+@media only screen and (min-width: 640px) {
+
+    header { 
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 15px;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    [class*="col-"] {
+        float: left;
+        padding: 10px;
+    }
+
+
+}
+/* Large device (1024px or larger) */
+@media only screen and (min-width: 1024px) {
+    .col-lg-7 {
+        width: 58%;
+    }
+    .col-lg-5 {
+        width: 42%;
+    }
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+/* X-large devices (1440px or larger) */
+@media only screen and (min-width: 1440px) {
+
+}
+
+
