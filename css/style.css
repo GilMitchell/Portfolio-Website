@@ -83,7 +83,7 @@ a:active {
     background-color: #7d1e0e;
     color: #FFFFFF;
 }
-* { 
+.button.contact:active{ 
     box-sizing: border-box;
 }
 .button {
@@ -134,13 +134,12 @@ a:active {
     text-align: center;
 }
 .logo {
-    max-width: 250px;
+    max-width: 150px;
     text-align: center;
 }
 header {
     background-color: #323232;
-    text-align: center;
-    padding: 0;
+    padding: 10px 0 4 px;
     width: 100%;
     -webkit-box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.8);
     -moz-box-shadow:    0px 10px 10px 0px rgba(50, 50, 50, 0.8);
@@ -156,11 +155,8 @@ header {
 }
 nav > ul {
     list-style-type: none;
-    padding: 0;
 }
-nav > ul > li {
-    display: inline-block;
-}
+
 nav > ul > li > a {
     padding: 0 15px;
     text-transform: uppercase;
@@ -178,6 +174,20 @@ nav > ul > li > a:hover {
 nav > ul > li > a:active {
     color: #FFFFFF;
 }
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+.navtoggle.responsive li {
+    display: block;
+    padding: 10 px 0;
+    border-top: 1 px solid #000000;
+}
+.navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+}
 #hero { 
     background-color: #FFFFFF;
     padding: 20px 0;
@@ -185,7 +195,7 @@ nav > ul > li > a:active {
     width: 100%;
 }
 main { 
-    padding-top: 133px;
+    padding-top: 56px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -269,8 +279,36 @@ footer {
         float: left;
         padding: 10px;
     }
-
-
+    .logo {
+        max-width: 250px;
+        text-align: center;
+    }
+    nav > ul > li {
+        display: inline-block;
+    }
+     .navtoggle li:not(:last-child){
+        display: inline-block;
+    }   
+    .navtoggle li:last-child{
+        display: none;
+    }
+    .navtoggle, .navtoggle.responsive {
+        position: relative;
+    }
+    .navtoggle li .icon {
+        position: absolute;
+        right: 0;
+        top: 2px;
+        font-size: 20px;
+        padding-right: 0;
+    }
+    nav > ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    nav > ul {
+        margin: 1em 0;
+    }
 }
 /* Large device (1024px or larger) */
 @media only screen and (min-width: 1024px) {
@@ -285,6 +323,11 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
+    .logo {
+        max-width: 250px;
+        text-align: center;
+    }
+
 
 }
 /* X-large devices (1440px or larger) */
