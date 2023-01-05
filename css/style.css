@@ -188,6 +188,13 @@ nav > ul > li > a:active {
 .navtoggle.responsive li:last-child {
     padding: 0 0 10px;
 }
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    
+}
 #hero { 
     background-color: #FFFFFF;
     padding: 20px 0;
@@ -295,13 +302,7 @@ footer {
     .navtoggle, .navtoggle.responsive {
         position: relative;
     }
-    .navtoggle li .icon {
-        position: absolute;
-        right: 0;
-        top: 2px;
-        font-size: 20px;
-        padding-right: 0;
-    }
+  
     nav > ul {
         list-style-type: none;
         padding: 0;
