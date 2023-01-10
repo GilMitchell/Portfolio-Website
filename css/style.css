@@ -328,10 +328,10 @@ footer {
 /* Large device (1024px or larger) */
 @media only screen and (min-width: 1024px) {
   .col-lg-7 {
-    width: 58%;
+    width: 56%;
   }
   .col-lg-5 {
-    width: 42%;
+    width: 40%;
   }
   .container {
     max-width: 1200px;
